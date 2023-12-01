@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="grid.css">
 </head>
 <body>
     <header>
@@ -17,7 +18,8 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <a id="ham-menu" class="ham" href="#"><img id="hamburger-icon" src="icons/hamburger-menu.svg" alt="Menu"></a>
+    <main id="Introduction-main">
         <div id = "second-nav">
             <a href="about.html">Introduction</a>
             <a href="about_fav.html">favourite</a>
@@ -52,5 +54,11 @@
             <a  href="https://www.linkedin.com/in/yonathan-undefined-8a157b285/"><img class = "icons" src="icons/2048px-LinkedIn_icon.svg.png" alt=""></a>
         </div>
     </footer>
+    <script>
+        document.getElementById('ham-menu').addEventListener('click', function() {
+            var nav = document.getElementById('main-nav').getElementsByTagName('ul')[0];
+            nav.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
