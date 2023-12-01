@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="grid.css">
+
 </head>
 <body>
     <header>
@@ -17,36 +19,38 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div>
-            <div>
-                <div>
+    <a id="ham-menu" class="ham" href="#"><img id="hamburger-icon" src="icons/hamburger-menu.svg" alt="Menu"></a>
+    <main class="experience-project-main"> 
+        <div class="Project-container">
+            <div class="projects-with-button">
+                <div class="projects">
                     <h2>Smart Electric Meter</h2>
-                    <p>In the year 2012 EC in DebreZeit, I embarked on a groundbreaking project—the creation of a Smart Electric Meter system. Motivated by a vision of enhancing energy efficiency and monitoring, I successfully developed a cutting-edge solution. This project involved the integration of advanced technologies to enable real-time tracking of electricity consumption, offering users valuable insights into their usage patterns. The Smart Electric Meter aimed to contribute to sustainable energy practices by promoting informed decision-making and optimizing energy consumption. This endeavor reflects my commitment to innovation and technology, showcasing the potential for transformative solutions in the field of electrical systems.                    </p>
+                    <p>In the year 2012 EC in DebreZeit, I embarked on a groundbreaking project—the creation of a Smart Electric Meter system. Motivated by a vision of enhancing energy efficiency and monitoring, I successfully developed a cutting-edge solution. This project involved the integration of advanced technologies to enable real-time tracking of electricity consumption, offering users valuable insights into their usage patterns. <p class="hidden">The Smart Electric Meter aimed to contribute to sustainable energy practices by promoting informed decision-making and optimizing energy consumption. This endeavor reflects my commitment to innovation and technology, showcasing the potential for transformative solutions in the field of electrical systems.</p></p>
                 </div>
-                <button>read more</button>
+                <button class="read-more">Read More</button>
             </div>
-            <div>
-                <div>
+            <div class="projects-with-button">
+                <div class="projects">
                     <h2>Poetry management system</h2>
-                    <p>In the year 2014 EC, I undertook the development of a Poetry Management System, a project aimed at seamlessly organizing and cataloging a diverse collection of poems. Leveraging my passion for both poetry and technology, I created a platform that allowed for the systematic storage, retrieval, and management of poetic works. The Poetry Management System incorporated features such as categorization, search capabilities, and user-friendly interfaces, offering enthusiasts and scholars a centralized hub for exploring and appreciating the art of poetry. This project not only highlighted my technical skills but also demonstrated a commitment to preserving and promoting the beauty of literary expression in the digital age.</p>
+                    <p>In the year 2014 EC, I undertook the development of a Poetry Management System, a project aimed at seamlessly organizing and cataloging a diverse collection of poems. Leveraging my passion for both poetry and technology, I created a platform that allowed for the systematic storage, retrieval, and management of poetic works.The Poetry Management System incorporated features such as categorization, search capabilities, and user-friendly interfaces, offering enthusiasts and scholars a centralized hub for exploring and appreciating the art of poetry.<p class="hidden">This project not only highlighted my technical skills but also demonstrated a commitment to preserving and promoting the beauty of literary expression in the digital age.</p></p>
                 </div>
-                <button>read more</button>
+                <button class="read-more">Read More</button>
             </div>
-            <div>
-                <div>
+            <div class="projects-with-button">
+                <div class="projects">
                     <h2>Tic-Tac-Toe</h2>
-                    <p>In the year 2013 EC in DebreZeit, I undertook a captivating project by developing a Tic-Tac-Toe game. Motivated by a passion for coding and game development, this project showcased my proficiency in programming and logical problem-solving. The Tic-Tac-Toe game featured an interactive interface that allowed users to engage in a classic and strategic contest. The implementation included key functionalities such as player turns, board representation, and victory conditions. Through this project, I not only demonstrated my technical skills but also embraced the joy of creating an engaging and timeless gaming experience.</p>
+                    <p>In the year 2013 EC in DebreZeit, I undertook a captivating project by developing a Tic-Tac-Toe game. Motivated by a passion for coding and game development, this project showcased my proficiency in programming and logical problem-solving. The Tic-Tac-Toe game featured an interactive interface that allowed users to engage in a classic and strategic contest.The implementation included key functionalities such as player turns, board representation, and victory conditions. <p class="hidden">Through this project, I not only demonstrated my technical skills but also embraced the joy of creating an engaging and timeless gaming experience.</p></p>
                 </div>
-                <button>read more</button>
+                <button class="read-more">Read More</button>
             </div>
         </div>
-        <aside>
-            <nav>
+        <aside id="projects-aside">
+            <nav id="side-nav">
                 <a href="Experience-work-history.html">Work History</a>
                 <a href="Experience-Skills.html">Skills</a>
                 <a href="Experience-work-history.html">Projects</a>
             </nav>
+            <a id="side-menu" class="side" href="#"><img id="side-bar-icon" src="icons/hide-sidebar.svg" alt="Menu"></a> 
         </aside>
     </main>
     <footer>
@@ -56,5 +60,31 @@
             <a  href="https://www.linkedin.com/in/yonathan-undefined-8a157b285/"><img class = "icons" src="icons/2048px-LinkedIn_icon.svg.png" alt=""></a>
         </div>
     </footer>
+    <script>
+        document.getElementById('ham-menu').addEventListener('click', function() {
+            var nav = document.getElementById('main-nav').getElementsByTagName('ul')[0];
+            nav.classList.toggle('show');
+        });
+
+        document.getElementById('side-menu').addEventListener('click', function() {
+            var nav = document.getElementById('side-nav').getElementsByTagName('a')[0];
+            nav.classList.toggle('show');
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+  const readMoreButtons = document.querySelectorAll('.read-more');
+
+  readMoreButtons.forEach(button => {
+      button.addEventListener('click', function () {
+          const hiddenParagraph = this.previousElementSibling.querySelector('.hidden');
+          const isHidden = hiddenParagraph.style.display === 'none';
+
+          hiddenParagraph.style.display = isHidden ? 'block' : 'none';
+          this.textContent = isHidden ? 'Read Less' : 'Read More';
+      });
+  });
+});
+
+    </script>
 </body>
 </html>
