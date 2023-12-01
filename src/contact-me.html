@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="grid.css">
 </head>
 <body>
     <header>
@@ -17,26 +18,28 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <aside>
-            <a  href="https://www.facebook.com/lij.alem.06/"><img class = "icons" src="icons/2048px-Facebook_icon.svg.png" alt="">facebook</a>
-            <a  href="https://www.instagram.com/yonathan_a_zewdie/"><img class = "icons" src="icons/2048px-Instagram_logo_2022.svg.png" alt="">instagram</a>
-            <a  href="https://www.linkedin.com/in/yonathan-undefined-8a157b285/"><img class = "icons" src="icons/2048px-LinkedIn_icon.svg.png" alt="">linkedin</a>
+    <a id="ham-menu" class="ham" href="#"><img id="hamburger-icon" src="icons/hamburger-menu.svg" alt="Menu"></a>
+    <main id="contact-me-main">
+        <aside id="contact-me-aside">
+            <a  href="https://www.facebook.com/lij.alem.06/"><img class = "icons" src="icons/2048px-Facebook_icon.svg.png" alt=""></a>
+            <a  href="https://www.instagram.com/yonathan_a_zewdie/"><img class = "icons" src="icons/2048px-Instagram_logo_2022.svg.png" alt=""></a>
+            <a  href="https://www.linkedin.com/in/yonathan-undefined-8a157b285/"><img class = "icons" src="icons/2048px-LinkedIn_icon.svg.png" alt=""></a>
         </aside>
-        <div>
-            <div>
-                <img src="images/Yonatan.jpg" alt="my-pic">
+        <div id="link-and-pic"> 
+            <div id="contact-me-content">
+                <img id = "circular-pic" src="images/Yonatan.jpg" alt="my-pic">
+                <address>
+                    <a href="https://www.facebook.com/lij.alem.06/"><img class = "icons" src="icons/2048px-Facebook_icon.svg.png" alt="facebook">facebook</a>
+                    <a href="https://www.instagram.com/yonathan_a_zewdie/"><img class = "icons" src="icons/2048px-Instagram_logo_2022.svg.png" alt="instagram">Instagram</a>
+                    <a href="https://www.linkedin.com/in/yonathan-undefined-8a157b285/"><img class = "icons" src="icons/2048px-LinkedIn_icon.svg.png" alt="linkedin">linkedin</a>
+                </address>
             </div>
-            <address>
-                <a href="https://www.facebook.com/lij.alem.06/"><img src="icons/2048px-Facebook_icon.svg.png" alt="facebook">facebook</a>
-                <a href="https://www.instagram.com/yonathan_a_zewdie/"><img src="icons/2048px-Instagram_logo_2022.svg.png" alt="instagram">Instagram</a>
-                <a href="https://www.linkedin.com/in/yonathan-undefined-8a157b285/"><img src="icons/2048px-LinkedIn_icon.svg.png" alt="linkedin">linkedin</a>
-            </address>
+            <div id="comment">
+                <textarea name="comment" placeholder="Type your comment here"></textarea>
+                <button>send</button>
+            </div>
         </div>
-        <div>
-            <textarea name="comment">Tyepe your comment here</textarea>
-            <button>send</button>
-        </div>
+        
     </main>
     <footer>
         <div class = "iconic">
@@ -45,5 +48,11 @@
             <a  href="https://www.linkedin.com/in/yonathan-undefined-8a157b285/"><img class = "icons" src="icons/2048px-LinkedIn_icon.svg.png" alt=""></a>
         </div>
     </footer>
+    <script>
+        document.getElementById('ham-menu').addEventListener('click', function() {
+            var nav = document.getElementById('main-nav').getElementsByTagName('ul')[0];
+            nav.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
