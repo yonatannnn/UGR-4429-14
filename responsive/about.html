@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flex.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="index.html" class="main-nav__link">Home</a></li>
+                <li class="main-nav__item"><a href="about.html" class="main-nav__link">About</a></li>
+                <li class="main-nav__item"><a href="Experience-work-history.html" class="main-nav__link">Experience</a></li>
+                <li class="main-nav__item"><a href="contact-me.html" class="main-nav__link">Contact-me</a></li>
+                <li class="main-nav__item"><a href="resume.html" class="main-nav__link">resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <a id="ham-menu" class="ham" href="#"><img id="hamburger-icon" src="icons/hamburger-menu.svg" alt="Menu"></a>
+    <main id="Introduction-main">
+        <div class = "second-nav">
+            <a href="about.html" class="second-nav__link">Introduction</a>
+            <a href="about_fav.html" class="second-nav__link">favourite</a>
+        </div>
+        <div class = "infos">
+            <div class="infos__col1">
+                <article class="info">
+                    <h2 class="info info__header">Life Story</h2>
+                    <p class="inf0 info__paragraph">My name is Yonatan Alebachew. I am from Debrezeit. I was born in 1994 E.C. in Debrezeit. MY father's name is Alebachew Zewde and my mother's name is Senait Moges. I have one brother and I am the second child for my family</p>
+                </article>
+                <article class="info">
+                    <h2 class="info info__header">Education</h2>
+                    <p class="info info__paragraph">From DebreZeit to AAU, my journey led to a Software Engineering degree. Each class fueled my passion for coding, shaping me into a lifelong learner ready for real-world challenges. Education is a journey, and I'm eager for the next chapter.</p>
+                </article>
+            </div>
+            <div class="infos__col2">
+                <article class="info">
+                    <h2 class="info info__header">Dreams</h2>
+                    <p class="inf0 info__paragraph">AAU Software Engineering grad with a knack for innovative problem-solving. Thriving in collaboration, I'm poised to make waves in the tech realm. Ready for the next big challenge!</p>
+                </article>
+                <article class="info">
+                    <h2>Engaging Hook</h2>
+                    <p>Embarking on a digital odyssey from DebreZeit to AAU, I transformed a love for code into a Software Engineering degree. Now, armed with a keyboard and boundless curiosity, the next chapter awaits—ready to code the future.</p>
+                </article>
+            </div>            
+        </div>
+    </main>
+    <footer>
+        <div class = "iconic">
+            <a  href="https://www.facebook.com/lij.alem.06/" class="footer__link"><img class = "footer__icons" src="icons/2048px-Facebook_icon.svg.png" alt=""></a>
+            <a  href="https://www.instagram.com/yonathan_a_zewdie/" class="footer__link"><img class = "footer__icons" src="icons/2048px-Instagram_logo_2022.svg.png" alt=""></a>
+            <a  href="https://www.linkedin.com/in/yonathan-undefined-8a157b285/" class="footer__link"><img class = "footer__icons" src="icons/2048px-LinkedIn_icon.svg.png" alt=""></a>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('ham-menu').addEventListener('click', function() {
+            var nav = document.getElementById('main-nav').getElementsByTagName('ul')[0];
+            nav.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

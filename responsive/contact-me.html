@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flex.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="index.html" class="main-nav__link">home</a></li>
+                <li class="main-nav__item"><a href="about.html" class="main-nav__link">about</a></li>
+                <li class="main-nav__item"><a href="Experience-work-history.html" class="main-nav__link">Experience</a></li>
+                <li class="main-nav__item"><a href="contact-me.html" class="main-nav__link">Contact-me</a></li>
+                <li class="main-nav__item"><a href="resume.html" class="main-nav__link">resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <a id="ham-menu" class="ham" href="#"><img id="hamburger-icon" src="icons/hamburger-menu.svg" alt="Menu"></a>
+    <main id="contact-me-main">
+        <aside id="contact-me-aside">
+            <a href="https://www.facebook.com/lij.alem.06/" class="contact-me-aside__link"><img class = "footer__icons" src="icons/2048px-Facebook_icon.svg.png" alt="facebook">facebook</a>
+            <a href="https://www.instagram.com/yonathan_a_zewdie/" class="contact-me-aside__link"><img class = "footer__icons" src="icons/2048px-Instagram_logo_2022.svg.png" alt="instagram">Instagram</a>
+            <a href="https://www.linkedin.com/in/yonathan-undefined-8a157b285/" class="contact-me-aside__link"><img class = "footer__icons" src="icons/2048px-LinkedIn_icon.svg.png" alt="linkedin">linkedin</a>
+        </aside>
+        <div class="link-and-pic"> 
+            <div class="contact-me-content">
+                <img id = "circular-pic" src="images/Yonatan.jpg" alt="my-pic">
+                <address>
+                    <a href="https://www.facebook.com/lij.alem.06/" class="footer__link"><img class = "footer__icons" src="icons/2048px-Facebook_icon.svg.png" alt="facebook">facebook</a>
+                    <a href="https://www.instagram.com/yonathan_a_zewdie/" class="footer__link"><img class = "footer__icons" src="icons/2048px-Instagram_logo_2022.svg.png" alt="instagram">Instagram</a>
+                    <a href="https://www.linkedin.com/in/yonathan-undefined-8a157b285/" class="footer__link"><img class = "footer__icons" src="icons/2048px-LinkedIn_icon.svg.png" alt="linkedin">linkedin</a>
+                </address>
+            </div>
+            <div class="comment">
+                <textarea name="comment" placeholder="Type your comment here"></textarea>
+                <button>send</button>
+            </div>
+        </div>
+        
+    </main>
+    <footer class="footer">
+        <div class = "footer__iconic">
+            <a  href="https://www.facebook.com/lij.alem.06/" class="footer__link"><img class = "footer__icons" src="icons/2048px-Facebook_icon.svg.png" alt=""></a>
+            <a  href="https://www.instagram.com/yonathan_a_zewdie/" class="footer__link"><img class = "footer__icons" src="icons/2048px-Instagram_logo_2022.svg.png" alt=""></a>
+            <a  href="https://www.linkedin.com/in/yonathan-undefined-8a157b285/" class="footer__link"><img class = "footer__icons" src="icons/2048px-LinkedIn_icon.svg.png" alt=""></a>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('ham-menu').addEventListener('click', function() {
+            var nav = document.getElementById('main-nav').getElementsByTagName('ul')[0];
+            nav.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

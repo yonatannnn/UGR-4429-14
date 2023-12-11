@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flex.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="index.html" class="main-nav__link">home</a></li>
+                <li class="main-nav__item"><a href="about.html" class="main-nav__link">about</a></li>
+                <li class="main-nav__item"><a href="Experience-work-history.html" class="main-nav__link">Experience</a></li>
+                <li class="main-nav__item"><a href="contact-me.html" class="main-nav__link">Contact-me</a></li>
+                <li class="main-nav__item"><a href="resume.html" class="main-nav__link">resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <a id="ham-menu" class="ham" href="#"><img id="hamburger-icon" src="icons/hamburger-menu.svg" alt="Menu"></a>
+    <main id="about_fav-main">
+        <div class = "second-nav">
+            <a href="about.html" class="second-nav__link">Introduction</a>
+            <a href="about_fav.html" class="second-nav__link">favourite</a>
+        </div>
+        <div class="contents">
+            <div class="outer">
+                <h2 class = "type" >movies</h2>
+                <div class="inner pad">
+                    <iframe  src="https://www.youtube.com/embed/4-CoaY9Op78" allowfullscreen class="movies"></iframe>
+                    <iframe  src="https://www.youtube.com/embed/r8YUEipVCkQ" allowfullscreen class="movies"></iframe>
+                    <iframe  src="https://www.youtube.com/embed/4vjysLd-4zI" allowfullscreen class="movies"></iframe>
+                    <iframe  src="https://www.youtube.com/embed/reh0co7g1AQ" allowfullscreen class="movies"></iframe>
+                    <iframe  src="https://www.youtube.com/embed/gfAnmYLuTUQ" allowfullscreen class="movies"></iframe>
+                </div>
+            </div>
+            <div class="outer">
+                <h2 class = "type">Books</h2>
+                <div class="inner" id="book-container">
+                    <a href="Books/Catcher-in-the-Rye-Text.pdf" target="_blank" class="book-anchor">
+                        <figure class="book-fig">
+                            <img src="Books/Reproduction-cover-edition-The-Catcher-in-the.webp" alt="Catcher-in-the-Rye" class="book-cover">
+                            <figcaption>Catcher in the rye text</figcaption>
+                        </figure>
+                    </a>
+                    <a href="Books/Gatsby_PDF_FullText.pdf" class="book-anchor">
+                        <figure class="book-fig">
+                            <img src="Books/the-greate-gatsby-cover.webp" alt="the-greate-gatsby" class="book-cover">
+                            <figcaption>The Greate Gatsby</figcaption>
+                        </figure>        
+                    </a>
+                    <a href="Books/one-hundred-years-of-solitude.pdf" class="book-anchor">
+                        <figure class="book-fig">
+                            <img src="Books/100_Years_First_Ed_Hi_Res-768x1153.jpg" alt="one-hundred-years-of-solitude" class="book-cover">
+                            <figcaption>One Hundred Years Of Solitude</figcaption>
+                        </figure>                        
+                    </a>
+                    <a href="Books/Rich-dad-poor-dad.pdf" class="book-anchor">
+                        <figure class="book-fig">
+                            <img src="Books/Rich-dad-poor-dad.jpg" alt="Rich-dad-poor-dad" class="book-cover">
+                            <figcaption>Rich Dad Poor Dad</figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <div class = "outer">
+                <h2 class = "type">Musics</h2>
+                <div class="inner" class="pad" id="musics">
+                    <div class="music-container">
+                        <h3>Ashenefe Lbe</h3>
+                        <audio controls class="music-audio">
+                            <source src="music/Ashenefe.mp3" type="audio/ogg">
+                            Your browser does not support the audio element.
+                        </audio>    
+                    </div>
+                    <div class="music-container">
+                        <h3>Bizuayehu</h3>
+                        <audio controls class="music-audio">
+                            <source src="music/Bizuayehu-Demisse-Enbuwa-Zebider.mp3" type="audio/ogg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="music-container">
+                        <h3>Gizachew</h3>
+                        <audio controls class="music-audio">
+                            <source src="music/ela-tv-Gizachew-Teshome-Yitayegn.mp3" type="audio/ogg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="music-container">
+                        <h3>Jason</h3>
+                        <audio controls class="music-audio">
+                            <source src="music/Jason-Derulo-x-Nuka-Love-Not-War.mp3" type="audio/ogg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+
+        <div class = "iconic">
+            <a  href="https://www.facebook.com/lij.alem.06/" class="footer__link"><img class = "footer__icons" src="icons/2048px-Facebook_icon.svg.png" alt=""></a>
+            <a  href="https://www.instagram.com/yonathan_a_zewdie/" class="footer__link"><img class = "footer__icons" src="icons/2048px-Instagram_logo_2022.svg.png" alt=""></a>
+            <a  href="https://www.linkedin.com/in/yonathan-undefined-8a157b285/" class="footer__link"><img class = "footer__icons" src="icons/2048px-LinkedIn_icon.svg.png" alt=""></a>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('ham-menu').addEventListener('click', function() {
+            var nav = document.getElementById('main-nav').getElementsByTagName('ul')[0];
+            nav.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

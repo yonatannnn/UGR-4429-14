@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flex.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="index.html" class="main-nav__link">home</a></li>
+                <li class="main-nav__item"><a href="about.html" class="main-nav__link">about</a></li>
+                <li class="main-nav__item"><a href="Experience-work-history.html" class="main-nav__link">Experience</a></li>
+                <li class="main-nav__item"><a href="contact-me.html" class="main-nav__link">Contact-me</a></li>
+                <li class="main-nav__item"><a href="resume.html" class="main-nav__link">resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <a id="ham-menu" class="ham" href="#"><img id="hamburger-icon" src="icons/hamburger-menu.svg" alt="Menu"></a>
+    <main class="resume-main">
+        <a class = "resume-main__link" href="https://drive.google.com/file/d/1_eRb06kAuBaPYxqUntO0cykN7SF5R8r0/view?usp=sharing" target="_blank">
+            <figure>
+                <img id = "resume-file" src="icons/resume.png" alt="resume">
+                <figcaption>Resume</figcaption>
+            </figure>
+        </a>
+    </main>
+    <footer>
+        <div class = "iconic">
+            <a  href="https://www.facebook.com/lij.alem.06/" class="footer__link"><img class = "footer__icons" src="icons/2048px-Facebook_icon.svg.png" alt=""></a>
+            <a  href="https://www.instagram.com/yonathan_a_zewdie/" class="footer__link"><img class = "footer__icons" src="icons/2048px-Instagram_logo_2022.svg.png" alt=""></a>
+            <a  href="https://www.linkedin.com/in/yonathan-undefined-8a157b285/" class="footer__link"><img class = "footer__icons" src="icons/2048px-LinkedIn_icon.svg.png" alt=""></a>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('ham-menu').addEventListener('click', function() {
+            var nav = document.getElementById('main-nav').getElementsByTagName('ul')[0];
+            nav.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
