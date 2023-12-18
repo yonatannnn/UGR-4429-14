@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-me</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/a82e0eaf32.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+    emailjs.init("DcgXv6fIRLlJP1h9x");
+})();
+</script>
+</head>
+
+<body>
+    <header>
+        
+        <nav class="navbar has-navbar-fixed-top  is-info is-variable is-centered">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" id="burger">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+        </a>
+        <div class="navbar-menu is-8  is-variable is-centered" id="nav-links">
+            <div class="navbar-start">
+                <a href="index.html" class="navbar-item mx-4">Home</a>
+                <a href="about.html" class="navbar-item mx-4">About</a>
+                <a href="Experience-work-history.html" class="navbar-item mx-4">Experience</a>
+                <a href="contact-me.html" class="navbar-item mx-4">Contact-me</a>
+                <a href="resume.html" class="navbar-item mx-4">resume</a>
+            </div>
+                
+        </div>            
+        </nav>
+    </header>
+    <main class="section">
+        <div class="container">
+            <div class="columns">
+                <aside class="column is-one-quarter">
+                    <div class="box is-flex is-flex-direction-column">
+                        <a href="https://www.facebook.com/lij.alem.06/" class="footer__link">
+                            <i class="fa fa-facebook column is-1"></i>
+                            Facebook
+                        </a>
+                        <a href="https://www.instagram.com/yonathan_a_zewdie/" class="footer__link">
+                            <i class="fa fa-instagram column is-1"></i>
+                            Instagram
+                        </a>
+                        <a href="https://www.linkedin.com/in/yonathan-undefined-8a157b285/" class="footer__link">
+                            <i class="fa fa-linkedin column is-1"></i>
+                            LinkedIn
+                        </a>
+                    </div>
+                </aside>
+                <div class="column">
+                    <div class="box">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-128x128">
+                                    <img class ="image is-rounded" id="circular-pic" src="images/Yonatan.jpg" alt="My Pic">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <address class="is-flex is-flex-direction-column">
+                                    <a href="https://www.facebook.com/lij.alem.06/">
+                                        <i class="fa fa-facebook column is-1"></i>
+                                        Facebook
+                                    </a>
+                                    <a href="https://www.instagram.com/yonathan_a_zewdie/">
+                                        <i class="fa fa-instagram column is-1"></i> Instagram
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/yonathan-undefined-8a157b285/">
+                                        <i class="fa fa-linkedin column is-1"></i>
+                                        LinkedIn
+                                    </a>
+                                </address>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="field mt-6">
+                                <label class="label">Type your comment here</label>
+                                <div class="control">
+                                    <textarea class="textarea" placeholder="Type your comment here" id="message"></textarea>
+                                </div>
+                            </div>
+                            <div class="control">
+                                <button class="button is-primary" onclick="sendMail()">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer is-size-6 px-1 py-1  navbar is-fixed-bottom is-variable is-centered has-text-centered is-flex is-justify-content-center">
+        <ul class="is-centered is-variable is-flex is-flex-wrap-no-wrap is-flex-gap-4">
+            <li class="">
+                <a href="https://www.facebook.com/lij.alem.06"  target="_blank"><i class="fa fa-facebook column is-8"></i>  </a>
+            </li>
+            <li class="">
+                <a href="https://www.instagram.com/yonathan_a_zewdie/"  target="_blank"><i class="fa fa-instagram column is-8"></i>  </a>
+            </li>
+            <li class="">
+                <a href="https://www.linkedin.com/in/yonathan-alebachew-8a157b285/"  target="_blank"><i class="fa fa-linkedin column is-8 "></i>  </a>
+            </li>
+
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
