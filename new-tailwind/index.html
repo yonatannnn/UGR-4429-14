@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tailwind.min.css">
+</head>
+<body class="h-screen flex flex-col">
+    <header class="bg-blue-500 p-4 grow-0">
+        <div class="container mx-auto flex justify-center items-center">
+          <nav class="hidden md:flex space-x-4">
+            <a href="index.html" class="text-white">Home</a>
+            <a href="about.html" class="text-white">About</a>
+            <a href="Experience-work-history.html" class="text-white">Experience</a>
+            <a href="contact-me.html" class="text-white">Contact-me</a>
+            <a href="resume.html" class="text-white">Resume</a>
+          </nav>
+          <div class="md:hidden">
+            <button id="mobileMenuButton" class="text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+    </header>
+    
+    <div id="mobileMenu" class="md:hidden bg-blue-500 p-4 hidden">
+        <a href="index.html" class="text-white block mb-2">Home</a>
+        <a href="about.html" class="text-white block mb-2">About</a>
+        <a href="Experience-work-history.html" class="text-white block mb-2">Experience</a>
+        <a href="contact-me.html" class="text-white block mb-2">Contact-me</a>
+        <a href="resume.html" class="text-white block">Resume</a>
+    </div>
+
+    <main class="flex-grow items-center h-full flex mb-4 flex-wrap"> <!-- Add margin bottom -->
+        <div class="w-full h-full md:w-1/2 p-6">
+            <img class="w-full h-full object-cover" src="images/Yonatan.jpg" alt="yonatans-pic">
+        </div>
+
+        <div class="w-full md:w-1/2 flex items-center">
+            <section class="text-center mb-4">
+                <h1 class="text-4xl font-bold mb-4">WELCOME</h1>
+                <p class="text-lg px-2">
+                    I'm Yonatan Alebachew, a Software Engineer with a passion for innovation. Explore my portfolio to discover a blend of creativity and expertise. Let's connect and bring your ideas to life!
+                </p>
+                <a class="bg-blue-500 text-white py-2 px-4 mt-4 inline-flex items-center" href="about.html">
+                    <img class="w-4 h-4 mr-2" src="icons/next.svg" alt="next-icon">
+                    About
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-white-800 py-1">
+        <div class="container mx-auto flex justify-center items-center">
+            <ul class="flex space-x-4">
+                <li>
+                    <a href="https://www.facebook.com/lij.alem.06" target="_blank"><img src="icons/facebook.svg" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/yonathan_a_zewdie/" target="_blank"><img src="icons/instagram (1).svg" alt=""></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/yonathan-alebachew-8a157b285/" target="_blank"><img src="icons/linkedin-in.svg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

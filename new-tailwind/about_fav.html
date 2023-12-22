@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about_fav</title> 
+    <link rel="stylesheet" href="tailwind.min.css">
+</head>
+<body class="font-sans">
+    <header class="bg-blue-500 p-4 grow-0">
+        <div class="container mx-auto flex justify-center items-center">
+          <nav class="hidden md:flex space-x-4">
+            <a href="index.html" class="text-white">Home</a>
+            <a href="about.html" class="text-white">About</a>
+            <a href="Experience-work-history.html" class="text-white">Experience</a>
+            <a href="contact-me.html" class="text-white">Contact-me</a>
+            <a href="resume.html" class="text-white">Resume</a>
+          </nav>
+          <div class="md:hidden">
+            <button id="mobileMenuButton" class="text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+    </header>
+    
+    <div id="mobileMenu" class="md:hidden bg-blue-500 p-4 hidden">
+        <a href="index.html" class="text-white block mb-2">Home</a>
+        <a href="about.html" class="text-white block mb-2">About</a>
+        <a href="Experience-work-history.html" class="text-white block mb-2">Experience</a>
+        <a href="contact-me.html" class="text-white block mb-2">Contact-me</a>
+        <a href="resume.html" class="text-white block">Resume</a>
+    </div>
+
+    <main class="section py-8 px-8">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-center mt-4">
+                <a href="about.html" class="text-xl px-4 py-2 text-black mb-2">Introduction</a>
+                <a href="about_fav.html" class="text-xl px-4 py-2 text-black">Favourite</a>
+            </div>
+
+            <div class="contents my-2">
+                <div class="flex flex-col my-12">
+                    <h2 class="type text-xl">Movies</h2>
+                    <div class="flex overflow-x-scroll gap-x-12">
+                        <iframe class="mx-2" src="https://www.youtube.com/embed/4-CoaY9Op78" allowfullscreen class="movies"></iframe>
+                        <iframe class="mx-2" src="https://www.youtube.com/embed/r8YUEipVCkQ" allowfullscreen class="movies"></iframe>
+                        <iframe class="mx-2" src="https://www.youtube.com/embed/4vjysLd-4zI" allowfullscreen class="movies"></iframe>
+                        <iframe class="mx-2" src="https://www.youtube.com/embed/reh0co7g1AQ" allowfullscreen class="movies"></iframe>
+                        <iframe class="mx-2" src="https://www.youtube.com/embed/reh0co7g1AQ" allowfullscreen class="movies"></iframe>
+                    </div>
+                </div>
+
+                <div class="flex flex-col my-12">
+                    <h2 class="type text-xl">Books</h2>
+                    <div class="flex overflow-x-scroll gap-x-12">
+                        <a class="col-span-1" href="Books/Catcher-in-the-Rye-Text.pdf" target="_blank">
+                            <figure class="book-fig">
+                                <img src="Books/Reproduction-cover-edition-The-Catcher-in-the.webp" alt="Catcher-in-the-Rye" class="h-32 md:h-48 lg:h-64 object-cover">
+                                <figcaption class="mt-2 text-center">Catcher in the Rye text</figcaption>
+                            </figure>
+                        </a>
+                        <a href="Books/Gatsby_PDF_FullText.pdf">
+                            <figure class="image is-128x128">
+                                <img src="Books/the-greate-gatsby-cover.webp" alt="the-greate-gatsby" class="h-32 md:h-48 lg:h-64 object-cover" >
+                                <figcaption>The Greate Gatsby</figcaption>
+                            </figure>        
+                        </a>
+                        <a class = "column" href="Books/one-hundred-years-of-solitude.pdf">
+                            <figure>
+                                <img src="Books/100_Years_First_Ed_Hi_Res-768x1153.jpg" alt="one-hundred-years-of-solitude" class="h-32 md:h-48 lg:h-64 object-cover">
+                                <figcaption>One Hundred Years Of Solitude</figcaption>
+                            </figure>                        
+                        </a>
+                        <a href="Books/Rich-dad-poor-dad.pdf" class="book-anchor">
+                            <figure >
+                                <img src="Books/Rich-dad-poor-dad.jpg" alt="Rich-dad-poor-dad" class="h-32 md:h-48 lg:h-64 object-cover">
+                                <figcaption>Rich Dad Poor Dad</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col my-12">
+                    <h2 class="type text-xl">Musics</h2>
+                    <div class="flex overflow-x-scroll gap-x-12">
+                        <div class="column" >
+                            <h3>Ashenefe Lbe</h3>
+                            <audio controls class="music-audio">
+                                <source src="music/Ashenefe.mp3" type="audio/ogg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="column">
+                            <h3>Bizuayehu</h3>
+                            <audio controls class="music-audio">
+                                <source src="music/Bizuayehu-Demisse-Enbuwa-Zebider.mp3" type="audio/ogg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="column">
+                            <h3>Gizachew</h3>
+                            <audio controls class="music-audio">
+                                <source src="music/ela-tv-Gizachew-Teshome-Yitayegn.mp3" type="audio/ogg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="column">
+                            <h3>Jason</h3>
+                            <audio controls class="music-audio">
+                                <source src="music/Jason-Derulo-x-Nuka-Love-Not-War.mp3" type="audio/ogg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white-800 py-1">
+        <div class="container mx-auto flex justify-center items-center">
+            <ul class="flex space-x-4">
+                <li>
+                    <a href="https://www.facebook.com/lij.alem.06" target="_blank"><img src="icons/facebook.svg" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/yonathan_a_zewdie/" target="_blank"><img src="icons/instagram (1).svg" alt=""></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/yonathan-alebachew-8a157b285/" target="_blank"><img src="icons/linkedin-in.svg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
