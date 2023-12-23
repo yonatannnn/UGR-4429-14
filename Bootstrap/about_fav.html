@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Favourite</title> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/a82e0eaf32.js" crossorigin="anonymous"></script>
+    </head>
+<body class="vh-100 d-flex flex-column">
+    <header>        
+        <nav class="navbar navbar-expand-lg navbar-light bg-info ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-links" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav-links">
+                <div class="navbar-nav">
+                    <a href="index.html" class="nav-item nav-link mx-4">Home</a>
+                    <a href="about.html" class="nav-item nav-link mx-4">About</a>
+                    <a href="Experience-work-history.html" class="nav-item nav-link mx-4">Experience</a>
+                    <a href="contact-me.html" class="nav-item nav-link mx-4">Contact-me</a>
+                    <a href="resume.html" class="nav-item nav-link mx-4">Resume</a>
+                </div>
+            </div>            
+        </nav>
+    </header>
+    <main class="flex-grow-1 mb-6">
+        <div class="container mt-4 d-flex flex-column">
+            <div class="d-flex justify-content-center">
+                <a href="about.html" class="btn btn-lg link m-2">Introduction</a>
+                <a href="about_fav.html" class="btn btn-lg link m-2">Favourite</a>
+            </div>
+            <div class="flex-grow-1">
+                <div class="d-flex flex-column my-12">
+                    <h2 class="text-xl">Movies</h2>
+                    <div class="d-flex overflow-auto gap-2">
+                        <iframe class="mx-2" src="https://www.youtube.com/embed/4-CoaY9Op78" allowfullscreen class="movies"></iframe>
+                        <iframe class="mx-2" src="https://www.youtube.com/embed/r8YUEipVCkQ" allowfullscreen class="movies"></iframe>
+                        <iframe class="mx-2" src="https://www.youtube.com/embed/4vjysLd-4zI" allowfullscreen class="movies"></iframe>
+                        <iframe class="mx-2" src="https://www.youtube.com/embed/reh0co7g1AQ" allowfullscreen class="movies"></iframe>
+                        <iframe class="mx-2" src="https://www.youtube.com/embed/reh0co7g1AQ" allowfullscreen class="movies"></iframe>
+                    </div>
+                </div>
+            
+                <div class="d-flex flex-column my-12">
+                    <h2 class="text-xl">Books</h2>
+                    <div class="d-flex overflow-auto gap-2">
+                        <a class="col-md-6 h-64" href="Books/Catcher-in-the-Rye-Text.pdf" target="_blank">
+                            <figure class="h-64">
+                                <img src="Books/Reproduction-cover-edition-The-Catcher-in-the.webp" alt="Catcher-in-the-Rye" class="h-32 md:h-2/4 lg:h-64 object-cover" style="height: 500px;">
+                                <figcaption class="mt-2 text-center">Catcher in the Rye text</figcaption>
+                            </figure>
+                        </a>
+                        <a class="col-md-6" href="Books/Gatsby_PDF_FullText.pdf">
+                            <figure class="image is-128x128">
+                                <img src="Books/the-greate-gatsby-cover.webp" alt="the-greate-gatsby" class="h-32 md:h-48 lg:h-64 object-cover" >
+                                <figcaption>The Great Gatsby</figcaption>
+                            </figure>        
+                        </a>
+                        <a class="col-md-6" href="Books/one-hundred-years-of-solitude.pdf">
+                            <figure>
+                                <img src="Books/100_Years_First_Ed_Hi_Res-768x1153.jpg" alt="one-hundred-years-of-solitude" class="h-32 md:h-48 lg:h-64 object-cover">
+                                <figcaption>One Hundred Years Of Solitude</figcaption>
+                            </figure>                        
+                        </a>
+                        <a class="col-md-6" href="Books/Rich-dad-poor-dad.pdf">
+                            <figure>
+                                <img src="Books/Rich-dad-poor-dad.jpg" alt="Rich-dad-poor-dad" class="h-32 md:h-48 lg:h-64 object-cover">
+                                <figcaption>Rich Dad Poor Dad</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            
+                <div class="d-flex flex-column my-12">
+                    <h2 class="text-xl">Musics</h2>
+                    <div class="d-flex overflow-auto gap-2">
+                        <div class="col-md-6">
+                            <h3>Ashenefe Lbe</h3>
+                            <audio controls class="music-audio">
+                                <source src="music/Ashenefe.mp3" type="audio/ogg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Bizuayehu</h3>
+                            <audio controls class="music-audio">
+                                <source src="music/Bizuayehu-Demisse-Enbuwa-Zebider.mp3" type="audio/ogg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Gizachew</h3>
+                            <audio controls class="music-audio">
+                                <source src="music/ela-tv-Gizachew-Teshome-Yitayegn.mp3" type="audio/ogg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Jason</h3>
+                            <audio controls class="music-audio">
+                                <source src="music/Jason-Derulo-x-Nuka-Love-Not-War.mp3" type="audio/ogg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer text-sm py-1 bg-white text-white fixed-bottom w-100 d-flex justify-content-center">
+        <ul class="d-flex gap-4">
+            <li>
+                <a href="https://www.facebook.com/lij.alem.06" target="_blank"><img src="icons/facebook.svg" alt="facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/yonathan_a_zewdie/" target="_blank"><img src="icons/instagram (1).svg" alt=""></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/yonathan-alebachew-8a157b285/" target="_blank"><img src="icons/linkedin-in.svg" alt=""></i></a>
+            </li>
+        </ul>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const navbarToggle = document.querySelector(".navbar-toggler");
+        const navLinks = document.querySelector("#nav-links");
+        navbarToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("show");
+        });
+
+        const navLinksList = document.querySelectorAll("#nav-links a");
+        navLinksList.forEach(function (link) {
+        link.addEventListener("click", function () {
+                navLinks.classList.remove("show");
+            });
+        });
+    });
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
